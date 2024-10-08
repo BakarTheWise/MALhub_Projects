@@ -12,6 +12,17 @@ body {
     background-color: bisque;
 }
 
+h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+header {
+    border-bottom: 1px black solid;
+    padding-bottom: 0.4em;
+}
+
 h2 {
   font-size: 6rem;
   font-weight: 600;  
@@ -45,9 +56,19 @@ p {
     margin-top: 2rem;
 }
 
+.container-style {
+    background-color: rgba(255, 163, 50, 0.37);
+    width: fit-content;
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0 0 2px 1px;
+    margin-bottom: 2em;
+}
+
 
 .search-box {
     text-align: center;
+    margin-inline: auto;
 }
 
 input {
@@ -56,22 +77,34 @@ input {
     border: none;
     text-align: center;
     outline: none;
-    border: 1px gray solid;
+    border: 5px rgb(96, 96, 96) solid;
+    
     border-radius: 100vh;
     margin-bottom: 0.5em;
+    background-color: rgba(143, 127, 108, 0.532);
 }
 
 button {
     display: block;
+    cursor: pointer;
     margin-inline: auto;
-    font-size: 1.8rem;
-    padding: 0.4em;
+    font-size: 1.6rem;
+    padding: 0.4em 1em;
+    border: none;
+    outline: none;
+    background-color: cadetblue;
+    color: aliceblue;
+    box-shadow: 0 0 3px 2px gray;
     border-radius: 100vh;
+}
+
+button:hover {
+    background-color: rgb(114, 187, 188);
 }
 
 .definision-display-noun,
 .definision-display-verb {
-    background-color: rgba(212, 169, 115, 0.362);
+    background-color: rgba(212, 168, 115, 0.552);
     margin-block: 1.3em;
     border: 1px gray solid;
     border-radius: 12px;
