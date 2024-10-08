@@ -54,6 +54,7 @@ h3 {
 .user-info div {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px gray solid;
 }
 
 .user-info {
@@ -63,4 +64,11 @@ h3 {
 span {
     display: inline-block;
     text-align: start;
+}
+
+.iccon-title {
+    border: 1px gray solid;
+    border-radius: 9px;
+    box-shadow: 0 0 3px 2px gray;
+    padding-bottom: 30px;
 }
