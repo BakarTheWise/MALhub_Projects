@@ -24,14 +24,15 @@ async function fetchData() {
         
         const title = data[0].word;
         const phonetic = data[0].phonetic;
-        const partOfSpeech = data[0].meanings[0].partOfSpeech;
+        const noun_partOfSpeech = data[0].meanings[0].partOfSpeech;
+        const verb_partOfSpeech = data[0].meanings[1].partOfSpeech;
         const noun_definitions = data[0].meanings[0].definitions;
         const verb_definitions = data[0].meanings[1].definitions;
 
         details.innerHTML =  `<h2>${title}</h2><h3 class="phonetic">Phonetic: ${phonetic}</h3>`;
 
-        noun_div.innerHTML = `<h4>Part of Speech: ${partOfSpeech}</h4>`;
-        verb_div.innerHTML = `<h4>Part of Speech: ${partOfSpeech}</h4>`;
+        noun_div.innerHTML = `<h4>Part of Speech: ${noun_partOfSpeech}</h4>`;
+        verb_div.innerHTML = `<h4>Part of Speech: ${verb_partOfSpeech}</h4>`;
 
         noun_div.appendChild(displayWordDefinition(noun_definitions));
         verb_div.appendChild(displayWordDefinition(verb_definitions));
